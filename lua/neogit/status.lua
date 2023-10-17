@@ -390,7 +390,7 @@ local function draw_buffer()
   end
 
   render_section("Recent commits", "recent")
-  render_section("Recent Branches", "recent")
+  render_section("Recent branches", "recent_branches")
 
   M.status_buffer:replace_content_with(output)
   M.locations = new_locations
