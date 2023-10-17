@@ -225,6 +225,10 @@ function M.get_default_values()
         folded = true,
         hidden = false,
       },
+      recent_branches = {
+        folded = true,
+        hidden = false,
+      },
     },
     ignored_settings = {
       "NeogitPushPopup--force-with-lease",

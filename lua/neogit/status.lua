@@ -264,6 +264,8 @@ local function draw_buffer()
       return
     end
 
+    print(vim.inspect(data))
+    print(vim.inspect(git))
     data = data or git.repo[key]
     if #data.items == 0 then
       return
