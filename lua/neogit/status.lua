@@ -259,10 +259,13 @@ local function draw_buffer()
   output:append("")
 
   local function render_section(header, key, data)
+    if key == 'recent_branches' then
+      print("***************************************")
+      print(vim.inspect(git))
+    end
+    end
     local section_config = config.values.sections[key]
     -- print(vim.inspect(data))
-    print("***************************************")
-    print(vim.inspect(git))
     if section_config.hidden then
       return
     end
