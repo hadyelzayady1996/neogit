@@ -261,6 +261,7 @@ local function draw_buffer()
   local function render_section(header, key, data)
     local section_config = config.values.sections[key]
     print(vim.inspect(data))
+    print("***************************************")
     print(vim.inspect(git))
     if section_config.hidden then
       return
